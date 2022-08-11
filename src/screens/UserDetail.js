@@ -32,19 +32,20 @@ const UserDetail = ({route}) => {
         </View>
         <View style={{margin: 10}}>
           <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-            Company Name: {user?.company.name}
+            Company Name: {user?.company ? user.company.name : ''}
           </Text>
           <View style={{height: 1, width: '90%', backgroundColor: 'gray'}} />
         </View>
         <View style={{margin: 10}}>
           <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-            Department: {user?.company.department}
+            Department:
+            {user?.company ? user.company.department : ''}
           </Text>
           <View style={{height: 1, width: '90%', backgroundColor: 'gray'}} />
         </View>
         <View style={{margin: 10}}>
           <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-            Title: {user?.company.title}
+            Title: {user?.company ? user.company.title : ''}
           </Text>
           <View style={{height: 1, width: '90%', backgroundColor: 'gray'}} />
         </View>
